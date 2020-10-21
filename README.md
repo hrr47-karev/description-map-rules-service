@@ -2,6 +2,9 @@
 
 Contains a fullstack React module with components for displaying a hostel's description, a map of it's location, and the hostel's specific rules and policies.
 
+## Demo
+![demo](demo.gif)
+
 ## Related Projects
 
   - https://github.com/hrr47-karev/imageCarousel
