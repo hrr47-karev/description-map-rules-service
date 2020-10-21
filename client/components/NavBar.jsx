@@ -10,7 +10,7 @@ const NavBarGridContainer = styled.div`
   grid-template-columns: 78px 97px 67px 97px 127px;
   grid-template-rows: 1fr;
   gap: 1px 1px;
-  grid-template-areas: "PricesContainer FacilitiesContainer MapContainer ReviewsContainer RulesContainer FlexArea";
+  grid-template-areas: 'PricesContainer FacilitiesContainer MapContainer ReviewsContainer RulesContainer FlexArea';
 `;
 const PricesContainer = styled.div`
   grid-area: PricesContainer;
@@ -73,18 +73,18 @@ const ModalMapBackground = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
   align-items: center;
   justify-content: center;
-  `;
+`;
 
 const ModalRulesBackground = styled.div`
-position: fixed;
-left: 0;
-top: 0;
-bottom: 0;
-right: 0;
-overflow: auto;
-width: 100%;
-height: 100%;
-background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 `;
 
 const NavBar = (props) => {

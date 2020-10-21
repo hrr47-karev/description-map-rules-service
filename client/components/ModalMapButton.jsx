@@ -87,7 +87,7 @@ const CloseButton = styled.button`
 
   &:hover {
     background: #f1f2f4;
-    transition: background .15s ease-in-out;
+    transition: background 0.15s ease-in-out;
     text-transform: none;
   }
 `;
@@ -125,9 +125,7 @@ const ModalMapButton = (props) => {
   return (
     <InlineDiv>
       <NavButtons onClick={toggleModal}>
-        <NavButtonInnerDiv>
-          Map
-        </NavButtonInnerDiv>
+        <NavButtonInnerDiv>Map</NavButtonInnerDiv>
       </NavButtons>
       <StyledModal
         isOpen={isOpen}
@@ -144,10 +142,7 @@ const ModalMapButton = (props) => {
         </MapModalHeader>
         <MapPaddingWrapper>
           <MapContainer>
-            <Map
-              latitude={hostel.latitude}
-              longitude={hostel.longitude}
-            />
+            <Map latitude={hostel.latitude} longitude={hostel.longitude} />
           </MapContainer>
         </MapPaddingWrapper>
       </StyledModal>

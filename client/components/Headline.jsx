@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  FaWifi,
-  FaCoffee,
-  FaThumbsUp,
-  FaTrophy,
-} from 'react-icons/fa';
+import { FaWifi, FaCoffee, FaThumbsUp, FaTrophy } from 'react-icons/fa';
 import { MdLocationOn } from 'react-icons/md';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -18,12 +13,12 @@ const HeadlineContainer = styled.div`
 
 const TitleContainer = styled.div`
   font-size: 2.125rem;
-  letter-spacing: -.3px;
+  letter-spacing: -0.3px;
   line-height: 1.18;
   margin: 0;
   display: block;
   margin-top: 1rem;
-  letter-spacing: -.3px;
+  letter-spacing: -0.3px;
   font-size: 34px;
   text-decoration: none solid rgb(49, 54, 63);
   font-weight: 700;
@@ -53,7 +48,7 @@ const BadgeIcon = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   cursor: pointer;
 `;
 
@@ -65,7 +60,7 @@ const CoffeeBadge = styled(BadgeIcon)`
 const ThumbBadge = styled(BadgeIcon)`
   background: #26a159;
   font-size: 28px;
-  transform: scale(-1,1);
+  transform: scale(-1, 1);
 `;
 
 const WifiBadge = styled(BadgeIcon)`
@@ -92,26 +87,12 @@ const TooltipCard = styled.div`
   }
 `;
 
-const Headline = ({
-  name, street, city, country,
-}) => (
+const Headline = ({ name, street, city, country }) => (
   <HeadlineContainer>
     <div>
-      <TitleContainer>
-        { name }
-        {' '}
-        Hostel
-      </TitleContainer>
+      <TitleContainer>{name} Hostel</TitleContainer>
       <AddressContainer>
-        <MdLocationOn />
-        {' '}
-        {street}
-        ,
-        {' '}
-        {city}
-        ,
-        {' '}
-        {country}
+        <MdLocationOn /> {street}, {city}, {country}
       </AddressContainer>
     </div>
     <BadgeListContainer>
@@ -119,9 +100,7 @@ const Headline = ({
         <CoffeeBadge>
           <FaCoffee />
         </CoffeeBadge>
-        <HoverPopperText>
-          {/* <p>Free breakfast</p> */}
-        </HoverPopperText>
+        <HoverPopperText>{/* <p>Free breakfast</p> */}</HoverPopperText>
       </TooltipCard>
 
       <TooltipCard>
@@ -153,9 +132,7 @@ const Headline = ({
             <FaWifi />
           </div>
         </WifiBadge>
-        <HoverPopperText>
-          {/* <p>Free WiFi</label> */}
-        </HoverPopperText>
+        <HoverPopperText>{/* <p>Free WiFi</label> */}</HoverPopperText>
       </TooltipCard>
     </BadgeListContainer>
   </HeadlineContainer>

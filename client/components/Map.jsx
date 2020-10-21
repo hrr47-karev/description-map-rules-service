@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const GMAPS_API_KEY = 'AIzaSyDi6aOgBApoHPNrfCB-itjArQWV4ajcxAc'; // INSERT API_KEY HERE
+const GMAPS_API_KEY = 'AIzaSyCXW3Ydo1l2YtL0QI1J7GHOaemXMLyzvm8'; // INSERT API_KEY HERE
 
 const Map = ({ latitude, longitude }) => (
   <iframe
